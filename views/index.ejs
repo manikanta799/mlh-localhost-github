@@ -18,7 +18,7 @@
           <a class="navbar-brand" href="#">
             <img alt="mlh-logo" src="/static/logo.svg" width="100px"/>
           </a>
-          <p class="navbar-text">MLH Localhost Hometowns</p>
+          <p class="navbar-text">MLH Localhost-Hometowns</p>
         </div>
       </div>
     </nav>
@@ -48,10 +48,10 @@
         map.panToBounds(bounds);
 
         // Adjust zoom level when there are few markers (or none)
-        if (locations.length < 3) {
+        if (locations.length < 4) {
           google.maps.event.addListenerOnce(map, "bounds_changed", function() {
             map.setCenter(bounds.getCenter());
-            map.setZoom(locations.length + 3);
+            map.setZoom(locations.length + 4);
           });
         }
       }
